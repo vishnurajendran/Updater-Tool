@@ -1,0 +1,7 @@
+{
+    "app_version_str":"App Version: ",
+    "update_prompt_str":"We found an Update.\nWould you like to download it?",
+    "yes_str":"Yes",
+    "no_str":"No",
+    "update_check_str":"Checking for updates"
+}
