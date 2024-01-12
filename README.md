@@ -1,7 +1,7 @@
+![](https://github.com/vishnurajendran/Updater-Tool/blob/main/app%20updator%20settings.png)
 # Updator-Tool
  a easy to use app updator for Unity games
-![](https://github.com/vishnurajendran/Updater-Tool/blob/main/app%20updator%20settings.png)
-
+ 
 ## Features
  - Easy to setu (NO scene setups needed)
  - Customizable GUI
