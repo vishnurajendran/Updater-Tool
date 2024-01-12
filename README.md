@@ -3,8 +3,9 @@
  a easy to use app updator for Unity games
  
 ## Features
- - Easy to setu (NO scene setups needed)
+ - Easy to setup (NO scene setups needed)
  - Customizable GUI
+ - Localization support
 
 ## How to use
  - Download and import the unitypackage
