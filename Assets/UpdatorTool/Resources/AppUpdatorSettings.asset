@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UpdateInfo:
     UpdateMetaFileUrl: https://app-updator-test.s3.ap-south-1.amazonaws.com/AppInfo.info
-  AppBuildPath: C:/Users/ssj5v/OneDrive/Desktop/Tests
+  AppBuildPath: C:/ssj5v/OneDrive/Desktop/Tests
   CurrentVersion:
     AppName: Updater Tool
     AppVersion: 0.0.1
     BuildVersion: 00001
     Author: DefaultCompany
-    BuildTime: 26-02-2023 16:37:43
-    MandatoryUpdate: 0
+    BuildTime: 12-01-2024 16:29:26
+    MandatoryUpdate: 1
     DevBuild: 1

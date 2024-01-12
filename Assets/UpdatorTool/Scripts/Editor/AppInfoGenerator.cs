@@ -24,13 +24,14 @@ namespace UpdatorTool.Scripts.Editor
 
         private void OnGUI()
         {
+            EditorGUILayout.BeginVertical("groupbox");
             info.AppName = EditorGUILayout.TextField("App Name:", info.AppName);
             info.Author = EditorGUILayout.TextField("Author:", info.Author);
             info.AppVersion = EditorGUILayout.TextField("App Version:", info.AppVersion);
             info.BuildVersion = EditorGUILayout.TextField("Build Version:", info.BuildVersion);
             info.MandatoryUpdate = EditorGUILayout.Toggle("Mandatory Update:", info.MandatoryUpdate);
             info.DevBuild = EditorGUILayout.Toggle("Development Build:", info.DevBuild);
-            
+            EditorGUILayout.EndVertical();
             if (GUILayout.Button("Generate AppInfo"))
             {
                 var path = EditorUtility.SaveFilePanel("Save AppInfo", "", "AppInfo", Constants.APPINFO_FILE_EXT);

@@ -31,7 +31,7 @@ public static class AppUpdator
               
               var currAppInfo = MyAppInfo;
               
-#if UNITY_EDITOR
+#if UNITY_EDITOR && BYPASS_UPDATE_CHECK_IN_EDITOR
               OnUpdateCheckComplete?.Invoke();
 #else
               Debug.Log("Checking for Update");
@@ -99,7 +99,7 @@ public static class AppUpdator
               fzip.ExtractZip(updateFileName,Application.dataPath,"");
               File.Delete(updateFileName);
        }
-       
+
        private static async Task<AppInfo> GetRemoteAppInfo()
        {
               await Task.Delay(1500);

@@ -32,6 +32,7 @@ public class UpdateGenerator : EditorWindow
 
     private void OnGUI()
     {
+        EditorGUILayout.BeginVertical("groupbox");
         EditorGUI.BeginChangeCheck();
         GUILayout.Space(10);
         EditorGUILayout.HelpBox("Set your new app info settings.", MessageType.Info);
@@ -42,7 +43,7 @@ public class UpdateGenerator : EditorWindow
         info.BuildVersion = EditorGUILayout.TextField("Build Version:", info.BuildVersion);
         info.MandatoryUpdate = EditorGUILayout.Toggle("Mandatory Update:", info.MandatoryUpdate);
         info.DevBuild = EditorGUILayout.Toggle("Development Build:", info.DevBuild);
-
+        EditorGUILayout.EndVertical();
         if (string.IsNullOrEmpty(AppUpdatorSettings.Settings.AppBuildPath))
         {
             if(GUILayout.Button("Choose Build Path"))
